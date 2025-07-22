@@ -36,6 +36,8 @@
 #if LANG_CXX11
 #define PROTOBUF_CONSTEXPR constexpr
 
+#include <type_traits>
+
 // We require C++11 and Clang to use constexpr for variables, as GCC 4.8
 // requires constexpr to be consistent between declarations of variables
 // unnecessarily (see https://gcc.gnu.org/bugzilla/show_bug.cgi?id=58541).
